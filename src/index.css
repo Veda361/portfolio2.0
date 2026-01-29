@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@layer utilities {
+  .brand-text {
+    font-size: 1.88rem;
+    color: #EAE0CF;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .deviors-text {
+    font-size: 1.5rem;
+    color: #061E29;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    margin: 5rem 0 0 8rem;
+    
+  }
+}
+
+@layer utilities {
+  .Stand-out {
+    font-size: 2.5rem !important;
+    color: #061E29;
+    font-weight: 600;
+    font-family: 'roboto', sans-serif;
+    margin: 2rem 0 0 8rem;
+  }
+}
+
+@layer utilities {
+  .font{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+}
+@layer utilities {
+  .font-2{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0.5rem;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .text-1 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+  }
+}
+
+.perfection-txt{
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.project-txt{
+  font-family: "Roboto serif"
+}
