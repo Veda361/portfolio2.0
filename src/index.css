@@ -73,3 +73,53 @@ a {
 .project-txt{
   font-family: "Roboto serif"
 }
+
+.connect-txt{
+  font-family: 'Roboto serif','Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.community-text{
+ 
+  font-family: 'Roboto serif','Poppins', sans-serif;
+  font-weight: 400;
+
+}
+
+.txt{
+  font-family: 'Roboto serif','Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.btn-txt{
+  font-family: 'Roboto serif','Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.home-txt{
+  font-family: 'Roboto serif','Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.project-txt{
+  font-family: 'Roboto serif','Poppins', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.stack-txt{
+  font-family: 'Roboto serif','Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #000000;
+}
+
+.button-text{
+  font-family: 'Roboto serif','Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000000;
+}

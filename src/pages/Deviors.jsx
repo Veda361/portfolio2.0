@@ -1,8 +1,9 @@
 import hero from "../assets/1-section-assets/Hero-img.png";
 import icons from "../assets/1-section-assets/icon_grp.png";
-import github from "../assets/1-section-assets/github-icon.png";
+import github from "../assets/1-section-assets/git.png";
 import call from "../assets/1-section-assets/call-icon.png";
 import Section_1 from "./Section_1";
+// import Footer from "../components/Footer";
 
 const Deviors = () => {
   return (
@@ -79,7 +80,7 @@ const Deviors = () => {
 
       {/* NEXT SECTION (NO WHITE GAP NOW) */}
       <Section_1 />
-
+       {/* <Footer /> */}
     </div>
   );
 };
