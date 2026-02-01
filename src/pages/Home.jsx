@@ -72,13 +72,16 @@ const Home = () => {
               />
             </div>
 
+
           </div>
         </div>
-
-        <Home2_0 />
+  <Home2_0 />
+      
       </div>
     </>
   );
 };
 
 export default Home;
+
+

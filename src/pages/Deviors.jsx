@@ -6,9 +6,19 @@ import Section_1 from "./Section_1";
 // import Footer from "../components/Footer";
 
 const Deviors = () => {
+  const openGitHub = () => {
+    window.open("https://github.com/Veda361", "_blank");
+  };
+
+  const openWhatsApp = () => {
+    window.open(
+      "https://wa.me/917678865573?text=Hello%20I%20want%20to%20connect%20with%20you",
+      "_blank"
+    );
+  };
+
   return (
     <div className="w-full overflow-x-hidden bg-[#547792]">
-      
       {/* HERO SECTION */}
       <div className="w-full flex min-h-[35rem]">
         {/* Left */}
@@ -25,18 +35,24 @@ const Deviors = () => {
               for brands that dare to
             </span>
 
-            <span className="stand-out block mt-[0.5rem] ml-[4.2rem]">
+            <span className="stand-out block mt-[0.5rem] ml-[4.2rem] text-[2.2rem]">
               Stand-Out
             </span>
           </h1>
 
           <div className="mt-[6.5rem] mb-[6rem] flex gap-[2.2rem]">
-            <button className="flex items-center gap-[0.6rem] px-[1.6rem] py-[0.9rem] rounded-[0.6rem] bg-[#3585F7] text-white shadow-lg">
+            <button
+              onClick={openGitHub}
+              className="flex items-center gap-[0.6rem] px-[1.6rem] py-[0.9rem] rounded-[0.6rem] bg-[#3585F7] text-white shadow-lg hover:scale-105 transition"
+            >
               <img src={github} alt="GitHub" className="w-[1.2rem]" />
               GitHub Profile
             </button>
 
-            <button className="flex items-center gap-[0.6rem] px-[1.6rem] py-[0.9rem] rounded-[0.6rem] bg-[#10B981] text-white shadow-lg">
+            <button
+              onClick={openWhatsApp}
+              className="flex items-center gap-[0.6rem] px-[1.6rem] py-[0.9rem] rounded-[0.6rem] bg-[#10B981] text-white shadow-lg hover:scale-105 transition"
+            >
               <img src={call} alt="Call" className="w-[1.2rem]" />
               Request Call
             </button>
@@ -48,39 +64,51 @@ const Deviors = () => {
           <img
             src={hero}
             alt="Hero"
-            className="mt-[4rem] h-[20rem] w-[22rem]"
+            className="
+              mt-[4rem]
+              h-[20rem] w-[22rem]
+              animate-[fadeInUp_1s_ease-out]
+              motion-safe:animate-[float_6s_ease-in-out_infinite]
+              transition-transform duration-500
+              hover:scale-[1.03] hover:-translate-y-[4px]
+            "
           />
-          <img src={icons} alt="Icons" className="mt-[1rem]" />
+          <img src={icons} alt="Icons" className="mt-[1rem] opacity-90" />
         </div>
       </div>
 
-      {/* STATS SECTION — NO MARGIN BOTTOM */}
+      {/* ✅ UPDATED STATS SECTION */}
       <div
-        className="w-full flex justify-between py-[3rem] items-center"
+        className="w-full py-[3rem] flex justify-center"
         style={{ backgroundColor: "rgba(84,119,146,0.35)" }}
       >
-        <div className="flex flex-col ml-[6rem] text-[#F3F4F4]">
-          <span>100+</span>
-          <span>Working</span>
-          <span>Projects</span>
-        </div>
+        <div className="flex gap-[10.5rem]">
+          {/* CARD 1 */}
+          <div className="w-[9rem] h-[9rem] flex flex-col items-center justify-center border border-[#EAE0CF]/40 rounded-[0.8rem] text-[#F3F4F4]">
+            <span className="text-[2rem] font-bold">100+</span>
+            <span>Working</span>
+            <span>Projects</span>
+          </div>
 
-        <div className="flex flex-col text-[#F3F4F4] ">
-          <span>4+</span>
-          <span>Team</span>
-          <span>Members</span>
-        </div>
+          {/* CARD 2 */}
+          <div className="w-[9rem] h-[9rem] flex flex-col items-center justify-center border border-[#EAE0CF]/40 rounded-[0.8rem] text-[#F3F4F4]">
+            <span className="text-[2rem] font-bold">4+</span>
+            <span>Team</span>
+            <span>Members</span>
+          </div>
 
-        <div className="flex flex-col mr-[6rem] text-[#F3F4F4]">
-          <span>2+</span>
-          <span>Collaborative</span>
-          <span>Teams</span>
+          {/* CARD 3 */}
+          <div className="w-[9rem] h-[9rem] flex flex-col items-center justify-center border border-[#EAE0CF]/40 rounded-[0.8rem] text-[#F3F4F4]">
+            <span className="text-[2rem] font-bold">2+</span>
+            <span>Collaborative</span>
+            <span>Teams</span>
+          </div>
         </div>
       </div>
 
-      {/* NEXT SECTION (NO WHITE GAP NOW) */}
+      {/* NEXT SECTION */}
       <Section_1 />
-       {/* <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

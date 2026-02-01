@@ -63,19 +63,19 @@ const Navbar = () => {
 
           {/* Contact */}
           <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `flex items-center gap-2 font-medium text-[1.65rem] transition-colors duration-300
-       ${isActive ? "text-[#CFC4A8]" : "text-[#EAE0CF] hover:text-white"}`
-            }
-          >
-            <img
-              src={mic}
-              className="h-[1.25rem] w-[1.17rem] mr-[0.5rem]"
-              alt="contact icon"
-            />
-            Contact
-          </NavLink>
+  to="/contact"
+  className={({ isActive }) =>
+    `flex items-center gap-2 font-medium text-[1.65rem] transition-colors duration-300
+     ${isActive ? "text-[#CFC4A8]" : "text-[#EAE0CF] hover:text-white"}`
+  }
+>
+  <img
+    src={mic}
+    className="h-[1.25rem] w-[1.17rem] mr-[0.5rem]"
+    alt="contact icon"
+  />
+  Contact
+</NavLink>
           {/* top-rightmost icon -[mac and android] */}
           <div className="flex items-center space-between">
             <NavLink

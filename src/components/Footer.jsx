@@ -1,99 +1,97 @@
-// import React from "react";
-// import logo_img from "../assets/1-section-assets/logo-deviors.png";
-// import { NavLink } from "react-router-dom";
-// import copyright_img from "../assets/footer-icons/copy-right-icon.png";
-// import { FaDiscord } from "react-icons/fa";
-// // import copy_img from "../assets/footer-icons/copy-right-icon.png";
-// import repo_img from "../assets/footer-icons/repo.png";
-// import mark_img from "../assets/footer-icons/mark.png";
-// import post_img from "../assets/footer-icons/post-in.png";
-// import x_icon from "../assets/footer-icons/x_icon.png";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import logo_img from "../assets/1-section-assets/logo-deviors.png";
+import repo_img from "../assets/footer-icons/repo.png";
+import mark_img from "../assets/footer-icons/mark.png";
+import post_img from "../assets/footer-icons/post-in.png";
+import x_icon from "../assets/footer-icons/x_icon.png";
+import { FaDiscord } from "react-icons/fa";
 
-// const Footer = () => {
-//   return (
-//     <>
-    
-//      <div className="flex gap-[3rem] w-full h-[60rem] mt-[6rem] bg-[#435431] ">
-      
-//       <div className="flex-1 bg-[#435645] w-[13rem] h-[30rem] ml-[1rem] relative">
+const Footer = () => {
+  return (
+    <footer className="w-full bg-[#547792] text-black">
+      {/* TOP LINE */}
+      <div className="w-full h-[1px] bg-[#EAE0CF]/70"></div>
 
+      <div className="flex px-[4rem] py-[3rem] gap-[3rem]">
 
-//         {/* 1 section-logo */}
-        
-//           <img
-//             src={logo_img}
-//             alt="logo"
-//             className="w-[3rem] h-[3rem] ml-[3.5rem] mt-[2.3rem] hover:cursor-pointer hover:opacity-90 hover:scale-95 transition-all duration-300 hover:bg-[#0F2854] transition-padding"
-//           />
-//           <span className="text-[#061E29] absolute top-[6.5rem] left-[3.5rem] connect-txt">
-//             Connect With Our Socials
-//           </span>
+        {/* LEFT */}
+        <div className="flex-1">
+          <img src={logo_img} className="w-[3rem] mb-[1.2rem]" />
+          <p className="mb-[1.2rem]">Connect With our social</p>
 
-//           {/*icons-links */}
+          <div className="flex gap-[1rem]">
+            <a href="https://github.com/Veda361" target="_blank" rel="noreferrer">
+              <img src={repo_img} className="w-[1.6rem]" />
+            </a>
+            <a href="https://www.instagram.com/dev_sahu431/" target="_blank" rel="noreferrer">
+              <img src={mark_img} className="w-[1.6rem]" />
+            </a>
+            <a href="https://www.linkedin.com/in/dev-sahu-476923369/" target="_blank" rel="noreferrer">
+              <img src={post_img} className="w-[1.7rem] h-[1.3rem]" />
+            </a>
+            <a href="https://discord.gg/your-link" target="_blank" rel="noreferrer">
+              <FaDiscord  className="w-[1.7rem] h-[1.3rem]" />
+            </a>
+            <a href="https://x.com/DevSahu1241274" target="_blank" rel="noreferrer">
+              <img src={x_icon} className="w-[1.4rem] mr-[1.4rem]" />
+            </a>
+          </div>
+        </div>
 
-//           <li className="flex gap-[0.9rem] ml-[3.2rem] mt-[3rem]">
-//             <a
-//               href="https://github.com/Veda361"
-//               target="_blank"
-//               rel="noreferrer"
-//               className="flex items-center hover:underline  hover:cursor-pointer hover:opacity-90 hover:scale-80 transition-all duration-300"
-//             >
-//               <img src={repo_img} className="w-[2rem] h-[1.5rem] " />
-//             </a>
-//             <a
-//               href="https://www.instagram.com/dev_sahu431/"
-//               target="_blank"
-//               rel="noreferrer"
-//               className="flex items-center hover:underline  hover:cursor-pointer hover:opacity-90 hover:scale-80 transition-all duration-300"
-//             >
-//               <img src={mark_img} className="w-[2rem] h-[1.5rem] " />
-//             </a>
+        {/* VERTICAL LINE */}
+        <div className="w-[1px]  ml-[-4rem] bg-[#EAE0CF]/70"></div>
 
-//             <a
-//               href="https://www.linkedin.com/posts/dev-sahu-476923369_figma-frontend-uidesign-activity-7420718390081712128-eGg9?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFtwdNoB44Fixs8jAYgCkFhwLG355YfaVlQ&utm_campaign=copy_link"
-//               target="_blank"
-//               rel="noreferrer"
-//               className="flex items-center hover:underline  hover:cursor-pointer hover:opacity-90 hover:scale-80 transition-all duration-300"
-//             >
-//               <img src={post_img} className="w-[2rem] h-[1.5rem] " />
-//             </a>
-//             <a
-//               href="https://discord.com/channels/@me"
-//               target="_blank"
-//               rel="noreferrer"
-//               className="flex items-center hover:underline  hover:cursor-pointer hover:opacity-90 hover:scale-80 transition-all duration-300"
-//             >
-//              <FaDiscord />
-//             </a>
-//             <a
-//               href="https://x.com/DevSahu1241274"
-//               target="_blank"
-//               rel="noreferrer"
-//               className="flex items-center hover:underline  hover:cursor-pointer hover:opacity-90 hover:scale-80 transition-all duration-300"
-//             >
-//               <img src={x_icon} className="w-[2rem] h-[1.5rem] " />
-//             </a>
-//           </li>
-//           <div className="absolute left-[21rem] top-[0.01rem] w-[0.008rem] h-[33rem] bg-[#E0E1E2]"></div>
-//       </div> 
+        {/* COMPANY */}
+        <div className="flex-1">
+          <h3 className="text-[1.3rem] mb-[1rem]">Company</h3>
+          <NavLink to="/about-us" className="block mb-[0.5rem]">About Us</NavLink>
+          <NavLink to="/support" className="block mb-[0.5rem]">Support</NavLink>
+          <a href="/privacy-policy" className="block mb-[0.5rem]">Privacy Policy</a>
+          <a href="/terms" className="block mb-[0.5rem]">Terms and Condition</a>
+          <a href="/pricing" className="block">Pricing and Refund</a>
+        </div>
 
-//       {/*community section */}
-//       <div className="flex-1 bg-[#876743] w-[10rem] h-[30rem]">
-//         <div className="bg-[#E0Ef] h-[2rem] mt-[2rem]">
-//       <span className="community-text text-[1.6rem]">Company</span>
-// </div>
-//      <Navlink
-//      to="/Aboutus"
-//      className="block mt-[2rem] ml-[2rem] text-[1rem] hover:underline  hover:cursor-pointer hover:opacity-90 hover:scale-95 transition-all duration-300"
-//      >
-//       About Us
-//      </Navlink>
-//       </div>
-// <      div className="flex-1 bg-[#435645] w-[10rem] h-[30rem]"></div>
-//       <div className="flex-1 bg-[#435645] w-[13rem] h-[30rem] mr-[1rem]"></div>
-//      </div>
-//     </>
-//   );
-// };
+        {/* VERTICAL LINE */}
+        <div className="w-[1px]  ml-[-4rem] bg-[#EAE0CF]/70"></div>
 
-// export default Footer;
+        {/* COMMUNITY */}
+        <div className="flex-1">
+          <h3 className="text-[1.3rem] mb-[1rem]">Community</h3>
+          <a href="https://discord.gg/your-link" target="_blank" rel="noreferrer" className="block mb-[0.5rem]">
+            Discord
+          </a>
+          <a href="https://wa.me/917678865573" target="_blank" rel="noreferrer" className="block">
+            Whatsapp
+          </a>
+        </div>
+
+        {/* VERTICAL LINE */}
+        <div className="w-[1px]  bg-[#EAE0CF]/70 ml-[-4rem]"></div>
+
+        {/* GET IN TOUCH */}
+        <div className="flex-1">
+          <h3 className="text-[1.3rem] mb-[1rem]">Get In Touch</h3>
+          <p>Online: 24*6</p>
+          <p>+91 7678865573</p>
+
+          <p className="mt-[0.8rem]">Offline: 24*5</p>
+          <p>+91 9795748606</p>
+
+          <p className="mt-[0.8rem]">devranjeetq@gmail.com</p>
+        </div>
+      </div>
+
+      {/* BOTTOM LINE */}
+      <div className="w-full h-[1px] bg-[#EAE0CF]/70"></div>
+
+      {/* COPYRIGHT */}
+      <div className="text-center py-[1.5rem] text-[0.9rem]">
+        Copyright © 2026 Deviors.com <br />
+        All Right Reserved.
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
